@@ -2,7 +2,6 @@ abi_version=2.3.0
 builtins_platform=WASM
 compiler_version=2.3.21
 ir_signature_versions=1,2
-jsOutputName=wasm-echo
 language_features=+AllowAnyAsAnActualTypeForExpectInterface +JsAllowImplementingFunctionInterface +MultiPlatformProjects
 metadata_version=2.3.0
 serializedIrFileFingerprints=1hwg9tdbd5j0m.28g9tzhf6zraa 3335s4k513nj6.3lbx149l1jsr7

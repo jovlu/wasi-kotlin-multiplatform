@@ -7,7 +7,6 @@ repositories {
 kotlin {
     wasmWasi {
         binaries.executable()
-        nodejs()
     }
 }
 tasks.register<Exec>("runWasm") {
