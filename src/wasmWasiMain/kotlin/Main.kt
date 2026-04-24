@@ -1,3 +1,6 @@
 fun main() {
-    println("Wasm success")
+    while (true) {
+        val line = readWasiLine() ?: break
+        println("Wasm received: $line")
+    }
 }
