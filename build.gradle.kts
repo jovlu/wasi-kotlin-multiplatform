@@ -13,10 +13,13 @@ tasks.register<Exec>("runWasm") {
     dependsOn("compileDevelopmentExecutableKotlinWasmWasi")
     outputs.upToDateWhen { false }
 
-    standardInput = System.`in`
-
     commandLine(
         "cmd", "/c",
-        "wasmtime -W gc -W function-references -W exceptions build\\compileSync\\wasmWasi\\main\\developmentExecutable\\kotlin\\wasm-echo.wasm"
+        "start", "\"wasm\"", "/wait",
+        "wasmtime",
+        "-W", "gc",
+        "-W", "function-references",
+        "-W", "exceptions",
+        "build\\compileSync\\wasmWasi\\main\\developmentExecutable\\kotlin\\wasm-echo.wasm"
     )
 }
